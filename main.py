@@ -1,6 +1,11 @@
-print("hello link-to-article")
+import os
+import openai
+#from IPython.display import display, Markdown
+from dotenv import load_dotenv
 
-with open("links.txt") as file:
-   for link in file:
-       print(link)
-
+load_dotenv()
+  
+OPEN_AI_API_KEY = os.getenv('API_KEY')
+print(OPEN_AI_API_KEY)
+#openai.api_key = os.environ["OPENAI"]
+  
